@@ -58,7 +58,9 @@ function Hero() {
               key={i.thumbnail}
               onClick={() => setselectedShoe(i.bigShoe)}
               className={`cursor-pointer bg-card bg-cover flex justify-center items-center w-28 h-28 sm:w-36 sm:h-36 p-1  border-3 rounded-lg ${
-                i.bigShoe === selectedShoe ? "border border-red-500" : ""
+                i.bigShoe === selectedShoe
+                  ? "border border-red-500"
+                  : "border-none"
               }`}
             >
               {<img width={120} src={i.bigShoe} />}

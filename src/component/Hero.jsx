@@ -9,7 +9,7 @@ function Hero() {
   return (
     <section
       id="/"
-      className="max-container pb-20 max-md:px-3 md:px-8 flex flex-col gap-10 lg:flex-row min-h-screen justify-center   "
+      className="max-container pb-20 p-4 md:px-8 flex flex-col gap-10 lg:flex-row min-h-screen justify-center   "
     >
       <div className="pt-28 w-2/5 max-lg:w-full ">
         <p className="text-coral-red font-montserrat text-lg ">
@@ -33,7 +33,7 @@ function Hero() {
         <div className="flex gap-12">
           {statistics.map((i) => (
             <div key={i.label}>
-              <h1 className="mb-1 text-4xl font-bold font-palanquin">
+              <h1 className="mb-1 text-[35px] sm:text-4xl font-bold font-palanquin">
                 {i.value}
               </h1>
               <p className="text-slate-gray text-sm font-montserrat">
@@ -57,7 +57,7 @@ function Hero() {
             <div
               key={i.thumbnail}
               onClick={() => setselectedShoe(i.bigShoe)}
-              className={`cursor-pointer bg-card bg-cover flex justify-center items-center w-28 h-28 sm:w-36 sm:h-36 p-1  border-3 rounded-lg ${
+              className={`cursor-pointer bg-card bg-cover flex justify-center items-center w-24 h-24 sm:w-36 sm:h-36 p-1  border-3 rounded-lg ${
                 i.bigShoe === selectedShoe
                   ? "border border-red-500"
                   : "border-none"

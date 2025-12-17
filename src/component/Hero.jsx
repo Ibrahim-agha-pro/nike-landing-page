@@ -9,7 +9,7 @@ function Hero() {
   return (
     <section
       id="/"
-      className="max-container pb-20 p-4 md:px-8 flex flex-col gap-10 lg:flex-row min-h-screen justify-center   "
+      className="max-container pb-20 px-4 md:px-8 flex flex-col gap-10 lg:flex-row min-h-screen justify-center   "
     >
       <div className="pt-28 w-2/5 max-lg:w-full ">
         <p className="text-coral-red font-montserrat text-lg ">
